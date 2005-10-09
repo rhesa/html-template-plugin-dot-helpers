@@ -1,0 +1,18 @@
+---
+name: HTML-Template-Plugin-Dot-Helpers
+version: 0.01
+author: Rhesa Rozendaal <rhesa@cpan.org>
+abstract: Add useful objects to your templates
+license: perl
+requires:
+  HTML::Template::Pluggable: 0.12
+  HTML::Template::Plugin::Dot: 0.96
+  Number::Format: 0
+  Test::More: 0
+provides:
+  HTML::Template::Plugin::Dot::Helpers:
+    file: lib/HTML/Template/Plugin/Dot/Helpers.pm
+    version: 0.01
+  HTML::Template::Plugin::Dot::Helpers::Number:
+    file: lib/HTML/Template/Plugin/Dot/Helpers/Number.pm
+generated_by: Module::Build version 0.25
