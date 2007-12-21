@@ -3,7 +3,7 @@ package HTML::Template::Plugin::Dot::Helpers::Number;
 use strict;
 use warnings;
 use base qw/Number::Format/;
-use Data::Dumper;
+our $VERSION = 0.01;
 
 sub equals
 {
@@ -49,6 +49,10 @@ See L<Number::Format> for formatting functions
 =item le, lt, ge, gt
 
 =back
+
+=head1 SEE ALSO
+
+L<HTML::Template::Plugin::Dot::Helpers> for detailed help, license, and contact information.
 
 =cut
 
