@@ -6,27 +6,27 @@ use base qw/Number::Format/;
 
 sub equals
 {
-	return $_[1] == $_[2];
+    return $_[1] == $_[2];
 }
 
 sub le
 {
-	return $_[1] <= $_[2];
+    return $_[1] <= $_[2];
 }
 
 sub lt
 {
-	return $_[1] < $_[2];
+    return $_[1] < $_[2];
 }
 
 sub ge
 {
-	return $_[1] >= $_[2];
+    return $_[1] >= $_[2];
 }
 
 sub gt
 {
-	return $_[1] > $_[2];
+    return $_[1] > $_[2];
 }
 
 1;
