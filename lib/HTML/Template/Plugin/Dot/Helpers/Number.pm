@@ -4,6 +4,12 @@ use strict;
 use warnings;
 use base qw/Number::Format/;
 
+sub format_price {
+    my $self = shift;
+    return unless @_ and defined $_[0]; # suppress a warning in parent
+    $self->SUPER::format_price(@_);
+}
+
 sub equals
 {
     return $_[1] == $_[2];
@@ -42,6 +48,8 @@ HTML::Template::Plugin::Dot::Helpers::Number - Number formatting and comparison 
 See L<Number::Format> for formatting functions
 
 =over 4
+
+=item format_price
 
 =item equals
 
